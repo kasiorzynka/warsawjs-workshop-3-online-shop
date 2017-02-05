@@ -7,20 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WarsawJS Workshop #3 :: Shop Online</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
 
     <script src="app/index.js"></script>
+    <script src="app/services/service.js"></script>
+    <script src="app/services/cart-service.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
+
 </head>
-<body ng-app="shop" ng-controller="IntroController">
-    <!--<shop></shop>-->
-    <input type="text" ng-model="inputModel.value">
-    <h1>{{inputModel.value}}</h1>
-    <ul>
-        <li ng-repeat="item in itemsList">{{item}}</li>
-    </ul>
+<body ng-app="shop"> <!-- ng-app mówi, że tu będzie Angular -->
 
-    <intro-directive obj-prop="testObj" text-prop="{{testText}}" fn-prop="callback(content)"></intro-directive>
+<shop-main-component></shop-main-component>
 
-    <div style="width: 100px; height: 100px; background-color: red;" ng-if="cbox" ></div>
 </body>
 </html>

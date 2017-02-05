@@ -1,0 +1,8 @@
+product{
+    margin: 20px;
+    float: left;
+    width: 200px;
+}
+.description{
+    min-height: 100px;
+}
